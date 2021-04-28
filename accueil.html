@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>ACCUEIL</title>
+</head>
+<body>
+    <header>
+        <div class="headerinfo">
+            <div class="headerinfonum">QUALITE, CONFIANCE, EXPERIENCE - DARUMA ENTREPRISE DE CONSTRUCTION </div> 
+            <div class="numeroheader">Tél - Fax : <a href="#"> +212 539 971 651</a></div> 
+        </div>
+        <div class="logomenudiv">
+            <div class="logo"><a href="accueil.html"><img src="images\logo.jpg"></a></div>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <a href="accueil.html"><li class="accueil">ACCUEIL</li></a>
+                        <a href="presentation.html"><li>PRESENTATION</li></a>
+                        <a href="ethique.html"><li>ETHIQUE</li></a>
+                        <a href="nosreferences.html"><li>NOS REFERENCES</li></a>
+                        <a href="nouscontacter.html"><li>NOUS CONTACTER</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="principale"> 
+            <div class="slider">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images\2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images\3.jpg" style="width:100%">
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <!-- slider script-->
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+                        
+                        function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                        }
+                        
+                        function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                        }
+                        
+                        function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {slideIndex = 1}    
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";  
+                        dots[slideIndex-1].className += " active";
+                        }
+                    </script>
+                <!-- fin slider script-->
+            </div>
+            <div class="iconeservices">
+                <div class="backgroundiconservices1">
+                    <div class="iconeservices1">
+                        <div class="a"><img src="images\qualite.png" ></div>
+                        <div class="b">QUALITE</div>
+                        <div class="c">Daruma Construction vous garantit des services de qualité pour bâtir en toute confiance.</div>
+                    </div>
+                    <div class="iconeservices2">
+                        <div class="a"><img src="images\confiance.png" ></div>
+                        <div class="b">CONFIANCE</div>
+                        <div class="c">Dynamisme, flexibilité et efficacité animent l’ensemble de nos actions</div>
+                    </div>
+                    <div class="iconeservices3">
+                        <div class="a"><img src="images\experience.png" ></div>
+                        <div class="b">EXPERIENCE</div>
+                        <div class="c">Daruma Construction met à votre disposition son équipe professionnelle et qualifiée </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="echantillon">
+                <div class="echantillon1">
+                    <div class="nosvaleurs">NOS VALEURS</div>
+                    <div class="iconegrey"><img src="images\greyicon1.png"></div>
+                    <div class="pro1">Professionnalisme</div>
+                    <div class="iconegrey"><img src="images\greyicon1.png"></div>
+                    <div class="pro1">Responsabilité sociétale</div>
+                    <div class="iconegrey"><img src="images\greyicon1.png"></div>
+                    <div class="pro1">Dynamisme</div>
+                </div>
+                <div class="echantillon2">
+                    <img src="images\echantillon2a.jpg">
+                    <img src="images\echantillon2b.jpg">
+                    <img src="images\echantillon2c.jpg">
+                </div>
+            </div>
+            <div class="presentation">
+                <div class="bienvenue">BIENVENUE SUR DARUMA</div>
+                <div class="presentation2emediv">
+                    <div class="pres1">
+                        <div class="pres1a">
+                            <span class="colorredspan">Daruma</span> 
+                                Construction est une entreprise familiale qui œuvre dans le domaine de la construction depuis plus de 20 ans.  A ce jour, elle a pris 
+                                en charge plus de 70 chantiers de particuliers et supervise 25 de ses propres constructions.
+                        </div>
+                        <div class="pres1b">Proche de ses clients, Daruma Construction vous propose son savoir-faire pour tous vos travaux 
+                                            de construction : <span class="colorredspan">logements économiques </span> ou 
+                                            <span class="colorredspan">touristiques</span> , <span class="colorredspan">établissements privés ou publics.</span> 
+                        </div>
+                        <div class="pres1c">Tout en vous garantissant qualité et professionnalisme.</div>
+                    </div>
+                    <div class="pres2"><img src="images\presentation.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footeraccueill">
+            <span class="supisifooter"> © Daruma 2019. Tous droits réservés. Entreprise de construction immobilière.<br> 
+            Conseption et réalisation YASSIN Lahhit. </span><br>Sup'ISI . Institut Supérieur de Génie Informatique.
+    </footer>
+</body>
+</html>
